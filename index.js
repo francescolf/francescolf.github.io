@@ -8,5 +8,5 @@ function get(nome) {
 function fw() {
     var cod = get("codice");
     var txt = get("testo");
-    window.location.replace("https://francescolf.altervista.org/notifiche?codice=" + cod + "&testo=" + txt);
+    window.location.href("https://francescolf.altervista.org/notifiche?codice=" + cod + "&testo=" + txt);
 }
