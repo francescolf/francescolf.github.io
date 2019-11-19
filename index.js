@@ -1,11 +1,12 @@
-function get(name) {
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+function get(nome) {
+    nome = nome.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + nome + '=([^&#]*)');
+    var r = regex.exec(location.search);
+    return r === null ? '' : decodeURIComponent(r[1].replace(/\+/g, ' '));
 }
 
 function fw() {
     var cod = get("codice");
-    alert(cod);
+    var txt = get("testo");
+    window.location.replace("https://francescolf.altervista.org/notifiche?codice=" + cod + "&testo=" + txt);
 }
