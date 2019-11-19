@@ -7,5 +7,5 @@ function get(name) {
 
 function fw() {
     var cod = get("codice");
-    alert("test");
+    alert(cod);
 }
