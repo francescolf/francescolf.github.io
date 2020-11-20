@@ -9,7 +9,63 @@
   </head>
   <body style="background-color:powderblue;">
     <p><strong style="color:red; font-family:Tomorrow; font-size:4vw" ><center>STORIA DI INTERNET</center></strong></p>
-	
-   
+
+<form action="url-script" method="post">
+    Nome <input type="text" name="nomepersona" size="25"><br>
+    Cognome <input type="text" name="cognomepersona" size="25"><br>
+    Domicilio <input type="text" name="domicilio" size="40"><br>
+    Telefono <input type="text" name="numero" size="10"><br>
+
+    <input type="submit" name="invia" value="INVIA">
+    <input type="reset" name="annulla" value="cancella"><br>
+    <!--il tasto canecella tutti i campi del form perché è all'interno
+    del form-->
+    password <input type="password" name="pwd" size="20" maxlength="12">
+    <br>
+    <input type="button" value="salva">
+    <input type="button" value="fai click qui">
+</form>
+
+<form>
+    Scegli il metodo di pagamento<br>
+    <input type="radio" name="carta" value="visa" checked>visa<br>
+    <!--il checked fa vedere il quell'elemento come già selezionato-->
+    <input type="radio" name="carta" value="mastercard">mastercard<br>
+    <input type="radio" name="carta" value="ae">american express<br>
+</form>
+
+<form>
+    Lingue conosciute<br>
+    <input type="checkbox" name="cb01" value="ita" checked>italiano<br>
+    <!--il checked fa vedere il quell'elemento come già selezionato-->
+    <input type="checkbox" name="cb02" value="eng">inglese<br>
+    <input type="checkbox" name="cb03" value="fra">francese<br>
+    <input type="checkbox" name="cb04" value="spa">spagnolo<br>
+</form>
+<form action="https://www.amazon.it/" target="_blank">
+    <button name="vai" type="submit">invia</button><br>
+    <textarea name="richiesta" rows="10" cols="40">scrivi qui le tue richieste</textarea>
+</form>
+<form>
+    <select name="regione">
+        <option value="1" selected>nord</option>
+        <option value="2">centro</option>
+        <option value="3">sud</option>
+        <option value="4">isole</option>
+    </select>
+</form>
+
+<label for="nomepersona">nome</label>
+<input type="text" id="nomepersona" size="25"><br><br>
+
+<label for="email">email</label>
+<input type="email" id="email" required><br><br>
+
+<input type="date" name="datanascita"><br><br>
+
+0%<input type="range" name="percentuale" min="0" max="100" step="1">100%
+<br>
+<!--Scegli il file da inviare:&nbsp;--!>
+<input type="file" name="sceglifile" size=57>
   </body>
 </html>
