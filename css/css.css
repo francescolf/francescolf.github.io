@@ -1,1 +1,53 @@
+.tabella {
+	width: 100%;
+	height: 100%;
+}
 
+.menu {
+	width: 20%;
+	text-align: left;
+	vertical-align: top;
+	background-color: #cacaca;
+	border-radius: 20px;
+	
+}
+
+.el:hover {
+	background-color: #7dbce3;
+}
+
+.el {
+	font-family: Oswald;
+	font-size: 25px;
+}
+
+.eltxt {
+	text-decoration: none;
+}
+
+.eltxt:link {
+  color: #38b054;
+}
+
+
+.eltxt:visited {
+  color: #38b054;
+}
+
+
+.eltxt:active {
+  color: #38b054;
+}
+
+.eltxt:hover {
+  color: #1d5c2c;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+.tab {
+	padding-left: 0;
+}
